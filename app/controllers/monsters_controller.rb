@@ -1,5 +1,5 @@
 class MonstersController < ApplicationController
   def index
-       @monster = Monster.find(1)
+       #@monster = Monster.find(1)
   end
 end
