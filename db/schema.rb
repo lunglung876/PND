@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20130926041922) do
   create_table "monsters", force: true do |t|
     t.string   "name"
     t.string   "attr"
-    t.string   "type"
+    t.string   "category"
     t.integer  "hp"
     t.integer  "atk"
     t.integer  "rcv"

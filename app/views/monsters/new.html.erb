@@ -1,9 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>New Monster</title>
 </head>
 <body>
+    <%= form_for(@monster) do |m|%>
+    <div class= "field">
+      <%= m.label :name%>
+      <%= m.text_field :name%>
+    </div>
+    <div class= "radio">
+      <%=m.radio_button(:attr,"fire") %>
+      <%= label_tag(:Fire, "Fire") %>
+      <%=m.radio_button(:attr,"water") %>
+      <%= label_tag(:Water, "Water") %>
+      <%=m.radio_button(:attr,"wood") %>
+      <%= label_tag(:Wood, "Wood") %>
+      <%=m.radio_button(:attr,"dark") %>
+      <%= label_tag(:Dark, "Dark") %>
+      <%=m.radio_button(:attr,"light") %>
+      <%= label_tag(:Light, "Light") %>
+    </div>
+    <div class= "radio">
+      <%=m.radio_button(:category,"dragon") %>
+      <%= label_tag(:Dragon, "Dragon") %>
+      <%=m.radio_button(:category,"devil") %>
+      <%= label_tag(:Devil, "Devil") %>
+      <%=m.radio_button(:category,"balanced") %>
+      <%= label_tag(:Balanced, "Balanced") %>
+      <%=m.radio_button(:category,"attacker") %>
+      <%= label_tag(:Attacker, "Attacker") %>
+      <%=m.radio_button(:category,"physical") %>
+      <%= label_tag(:Physical, "Physical") %>
+      <%=m.radio_button(:category,"healer") %>
+      <%= label_tag(:Healer, "Healer") %>
+      <%=m.radio_button(:category,"god") %>
+      <%= label_tag(:God, "God") %>
+      <%=m.radio_button(:category,"evo_material") %>
+      <%= label_tag(:Evo_Material, "Evo Material") %>
+      <%=m.radio_button(:category,"enhance_material") %>
+      <%= label_tag(:Enhance_Materiall, "Enhance Material")%>
+    </div>
+    <div class= "field">
+      <%= m.label :HP%>
+      <%= m.text_field :hp%>
+    </div>
+    <div class= "field">
+      <%= m.label :ATK%>
+      <%= m.text_field :atk%>
+    </div>
+    <div class= "field">
+      <%= m.label :RCV%>
+      <%= m.text_field :rcv%>
+    </div>
+    <div class = "drop_down">
+    <%= select_tag(:askill, options_for_select([['Test1', 1], ['Test2', 2]])) %>
+    </div>
+    <div class="field">
+      <%= m.label :icon %><br />
+      <%= m.file_field :icon %>
+    </div>
+    <div class = "submit">
+      <%= m.submit "Submit", :name => nil %>
+    </div>
+    <%end %>
 
 </body>
 </html>

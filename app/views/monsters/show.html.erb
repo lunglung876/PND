@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SHOW</title>
+</head>
+<body>
+<div id = "stats">
+  <table cellpading = "10" cellspacing = "1" width = "400">
+    <tbody>
+      <tr bgcolor = "#D8D8D8">
+        <td bgcolor = "#D8D8D8" rowspan = "4">
+          <table>
+            <tr>
+              <td>
+                <%=image_tag(@monster.icon.url) %>
+              </td>
+              <td>
+                <h1 style="font-size: 14px; line-height: 10px"> No. <%= @monster.id%> </h1>
+                <h2 style="font-size: 20px; line-height: 10px"><%=@monster.name%></h2>
+                0000
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td>
+          <%=image_tag(@monster.attr+'.png')%>
+        </td>
+        <td>
+          <%=image_tag(@monster.category+'.png')%>
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+</body>
+</html>

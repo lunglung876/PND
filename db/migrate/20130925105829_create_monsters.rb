@@ -3,7 +3,7 @@ class CreateMonsters < ActiveRecord::Migration
     create_table :monsters do |t|
       t.string :name
       t.string :attr
-      t.string :type
+      t.string :category
       t.integer :hp
       t.integer :atk
       t.integer :rcv

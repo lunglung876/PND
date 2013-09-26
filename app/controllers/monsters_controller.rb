@@ -1,5 +1,17 @@
 class MonstersController < ApplicationController
+
   def index
-       #@monster = Monster.find(1)
+
+  end
+  def show
+    @monster = Monster.find(params[:id])
+  end
+  def new
+    @monster = Monster.new
+  end
+  def create
+    @monster = Monster.new(params.require(:monster).permit(:name,:attr,:category,:hp,:atk,:rcv,:askill,:icon))
+    @monster.save
+    redirect_to(:root)
   end
 end
