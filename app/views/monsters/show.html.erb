@@ -4,11 +4,11 @@
     <title>SHOW</title>
 </head>
 <body>
-<div id = "stats">
-  <table cellpading = "10" cellspacing = "1" width = "400">
+<div class = "stats">
+  <table cellpading = "10" cellspacing = "1" width = "500">
     <tbody>
       <tr bgcolor = "#D8D8D8">
-        <td bgcolor = "#D8D8D8" rowspan = "4">
+        <td bgcolor = "#D8D8D8" rowspan = "3">
           <table>
             <tr>
               <td>
@@ -23,13 +23,28 @@
           </table>
         </td>
         <td>
-          <%=image_tag(@monster.attr+'.png')%>
+          <%=image_tag(@monster.attr+'.png', {height:31, width: 31})%>
         </td>
         <td>
           <%=image_tag(@monster.category+'.png')%>
         </td>
-
       </tr>
+      <tr bgcolor = "#D8D8D8" >
+        <td colspan="2" align="center">COST: 5</td>
+      </tr >
+      <tr bgcolor = "#D8D8D8" >
+        <td colspan="2" align="center">MAX EXPERIENCE: 100,000</td>
+      </tr >
+    </tbody>
+  </table>
+  <br/>
+  <table>
+    <tbody>
+     <tr rowspan="3">
+       <td>
+         Basic Stats
+       </td>
+     </tr>
     </tbody>
   </table>
 
