@@ -1,11 +1,11 @@
 // Place all the styles related to the monsters controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-tr
+.stats tr
 {
   background-color:#D8D8D8;
 }
-td
+.stats td
 {
   background-color:#D8D8D8;
 }
@@ -13,7 +13,7 @@ p
 {
   align:center;
 }
-table
+.stats table
 {
   cellpading:10;
   cellspacing:1;
@@ -24,3 +24,11 @@ div.stats
   margin-left: auto ;
   margin-right: auto ;
 }
+
+div#all_monsters
+{
+  width: 800px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+tr td div{display:none; background:white; opacity:.5; position:absolute;}
