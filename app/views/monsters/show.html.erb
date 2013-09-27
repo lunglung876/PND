@@ -5,7 +5,7 @@
 </head>
 <body>
 <div class = "stats">
-  <table cellpading = "10" cellspacing = "1" width = "500">
+  <table cellpading = "10" cellspacing = "1" width = "600">
     <tbody>
       <tr bgcolor = "#D8D8D8">
         <td bgcolor = "#D8D8D8" rowspan = "3">
@@ -22,10 +22,10 @@
             </tr>
           </table>
         </td>
-        <td>
+        <td align="center">
           <%=image_tag(@monster.attr+'.png', {height:31, width: 31})%>
         </td>
-        <td>
+        <td align="center">
           <%=image_tag(@monster.category+'.png')%>
         </td>
       </tr>
@@ -38,13 +38,52 @@
     </tbody>
   </table>
   <br/>
-  <table>
+  <table width = "600"  cellpading = "10" cellspacing = "1">
     <tbody>
-     <tr rowspan="3">
-       <td>
-         Basic Stats
+     <tr>
+       <td rowspan="2" width= "100" align="center">
+         <h2 align="center" style="font-size: 17px">Basic Stats</h2>
+       </td>
+       <td width="70"align="center" height="30">
+         Lv1 HP
+       </td>
+       <td width="60"align="center" height="30">
+         <%=@monster.hp%>
+       </td>
+       <td width="70"align="center" height="30">
+          Lv1 ATK
+       </td>
+       <td width="60" align="center" height="30">
+         <%=@monster.atk%>
+       </td>
+       <td width="70" align="center" height="30">
+         Lv1 RCV
+       </td>
+       <td width="60" align="center" height="30">
+         <%=@monster.rcv%>
        </td>
      </tr>
+    <tr>
+      <td width="70" align="center" height="30">
+        Final HP
+      </td>
+      <td width="60" align="center" height="30">
+       <%=@monster.hp%>
+      </td>
+      <td width="70" align="center" height="30">
+        Final ATK
+      </td>
+      <td width="60" align="center" height="30">
+       <%=@monster.atk%>
+      </td>
+      <td width="70" align="center" height="30">
+        Final RCV
+      </td>
+      <td width="60" align="center" height="30">
+        <%=@monster.rcv%>
+      </td>
+    </tr>
+
     </tbody>
   </table>
 

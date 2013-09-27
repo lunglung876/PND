@@ -2,12 +2,63 @@
 <html>
 <head>
   <title>PND</title>
-  <p>test</p>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <script>
+      $(document).ready(function(){
+         $("ul.sub").hide();
+         var menu = $("#menu")
+         menu.find("li").each(function(){
+             if ($(this).find("ul").length >0) {
+                  $(this).mouseenter(function() {
+                      $(this).find("ul").stop(true, true).slideDown();
+                  });
+                 $(this).mouseleave(function() {
+                     $(this).find("ul").stop(true, true).slideUp();
+                 });
+             }
+                     })
+
+      });
+
+  </script>
 </head>
 <body>
+<div id="header">
+    <div id="title">
+        <%=image_tag('title.png')%>
+    </div>
+    <div id="menu">
+      <ul class="normal">
+        <li class="has_sub">
+         <%= link_to('Home',:root) %>
+         <ul class="sub">
+           <li class = "sub">
+             <%= link_to('Home',:root) %>
+           </li>
+           <li class = "sub">
+             <%= link_to('Home',:root) %>
+           </li>
+         </ul>
+        </li>
+        <li class = "has_sub">
+          <%= link_to('Home',:root) %>
+        </li>
+        <li class = "has_sub">
+          <%= link_to('Home',:root) %>
+          <ul class="sub">
+            <li class = "sub">
+              <%= link_to('2222',:root) %>
+            </li>
+            <li class = "sub">
+              <%= link_to('Ho222me',:root) %>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</div>
 
 <%= yield %>
 
