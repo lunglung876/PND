@@ -30,7 +30,7 @@ gem 'jquery-rails'
 #image upload
 gem 'paperclip'
 gem 'aws-sdk'
-
+gem 'jquery-turbolinksturbolinks'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
 

@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/monsters/_result.html.erb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/monsters/search.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/monsters/index.html.erb" afterPath="$PROJECT_DIR$/app/views/monsters/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/monster.rb" afterPath="$PROJECT_DIR$/app/models/monster.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/monsters.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/monsters.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/monsters.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/monsters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/monsters_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/monsters_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PND.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380282224568" ignored="false" />
+    <file path="/Dummy.txt" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380366966701" ignored="false" />
     <file path="/database.yml" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380096563425" ignored="false" />
     <file path="/application.html.erb" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380282883933" ignored="false" />
     <file path="/routes.rb" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380356235583" ignored="false" />
@@ -26,7 +18,7 @@
     <file path="/index.erb" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380108339588" ignored="false" />
     <file path="/index.html.erb" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380339550734" ignored="false" />
     <file path="/20130925105829_create_monsters.rb" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380166611984" ignored="false" />
-    <file path="/Gemfile" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380166741345" ignored="false" />
+    <file path="/Gemfile" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380367154150" ignored="false" />
     <file path="/development.rb" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380174917658" ignored="false" />
     <file path="/monster.rb" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380363641311" ignored="false" />
     <file path="/20130926041922_add_icon_to_monsters.rb" changelist="6d8f06ea-13a4-4fb9-883b-fca02b10d2d7" time="1380169554768" ignored="false" />
@@ -62,6 +54,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="32" column="22" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="monsters.css.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/monsters.css.scss">
           <provider selected="true" editor-type-id="text-editor">
@@ -89,28 +90,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Rails PND: development" pinned="false" current="true" current-in-tab="true">
-        <entry file="dbDummy://db-console:/e25403b2/b58b6a16-ef7e-491a-8c63-a45ab97ee40a/">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="59" selection-start="0" selection-end="84" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.321428">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="monsters_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/monsters_helper.rb">
+      <file leaf-file-name="Rails PND: development" pinned="false" current="false" current-in-tab="false">
+        <entry file="dbDummy://db-console:/e25403b2/b58b6a16-ef7e-491a-8c63-a45ab97ee40a/">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="0" column="59" selection-start="0" selection-end="84" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/monsters/index.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -129,15 +130,6 @@
         <entry file="file://$PROJECT_DIR$/app/views/monsters/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="22.392857">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/monsters/new.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="0" selection-start="667" selection-end="1295" vertical-scroll-proportion="-2.0357144">
               <folding />
             </state>
           </provider>
@@ -181,7 +173,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/views/monsters/show.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/monsters.js.coffee" />
@@ -197,6 +188,7 @@
         <option value="$PROJECT_DIR$/app/models/monster.rb" />
         <option value="$PROJECT_DIR$/app/controllers/monsters_controller.rb" />
         <option value="db-console:/e25403b2/b58b6a16-ef7e-491a-8c63-a45ab97ee40a/" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -867,7 +859,11 @@
       <created>1380282227922</created>
       <updated>1380282227922</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="ajax completed">
+      <created>1380366968086</created>
+      <updated>1380366968086</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -892,9 +888,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="7" y="0" width="1660" height="1011" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327252" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327252" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Heroku" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32990867" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -958,7 +954,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="css" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajax completed" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -979,18 +975,12 @@
     <MESSAGE value="show&#10;" />
     <MESSAGE value="heroku" />
     <MESSAGE value="css" />
+    <MESSAGE value="ajax completed" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
@@ -1003,13 +993,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/monsters/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="29" selection-start="149" selection-end="149" vertical-scroll-proportion="-3.392857">
           <folding />
         </state>
       </provider>
@@ -1033,13 +1016,6 @@
     <entry file="file://$PROJECT_DIR$/app/helpers/monsters_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="18.321428">
           <folding />
         </state>
       </provider>
@@ -1096,6 +1072,27 @@
     <entry file="dbDummy://db-console:/e25403b2/b58b6a16-ef7e-491a-8c63-a45ab97ee40a/">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="59" selection-start="0" selection-end="84" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="22" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/monsters/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
