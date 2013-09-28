@@ -5,24 +5,6 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
-  <script type="text/javascript">
-      $('tr td').mouseenter(function(){
-          var image= $(this).find('img'),
-                  caption = $(this).find('div');
-          console.log('enter') ;
-
-          caption.width(image.width());
-          caption.height(image.height());
-          caption.fadeIn();
-      }).mouseleave(function(){
-                  var image= $(this).find('img'),
-                          caption = $(this).find('div');
-
-                  caption.width(image.width());
-                  caption.height(image.height());
-                  caption.fadeOut();
-              });
-  </script>
 </head>
 <body>
 <div id="header">

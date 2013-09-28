@@ -31,4 +31,16 @@ div#all_monsters
   margin-left: auto ;
   margin-right: auto ;
 }
-tr td div{display:none; background:white; opacity:.5; position:absolute;}
+div#search
+{
+  width: 800px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+div#result
+{
+  width: 800px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+tr td a{text-decoration: none; display:none; background:white; opacity:.9; position:absolute; color:white; background-color: dimgray;}

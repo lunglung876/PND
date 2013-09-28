@@ -14,4 +14,17 @@ class MonstersController < ApplicationController
     @monster.save
     redirect_to(:root)
   end
+
+  def result
+
+=begin
+    if params.has_key?("category") == false
+      params[:category] = '*'
+      puts params[:category]
+    end
+=end
+
+    @monsters = Monster.search(params)
+    render :partial => 'result', :content_type => 'text/html'
+  end
 end

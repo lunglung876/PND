@@ -1,14 +1,19 @@
-
 <div id="all_monsters">
     <table>
         <% counter = 0%>
         <% Monster.all.each do |m| %>
-
             <% if counter == 0 %>
             <tr>
             <%end%>
 
-                <td> <div class="caption"><%=m.id%></div><%=link_to image_tag(m.icon.url),m %></td>
+                <td>
+                  <%=link_to(m) do%>
+                      <div class="caption">
+                        No. <%=m.id%><br/><br/><br/><br/><%=m.name%>
+                      </div>
+                  <%end%>
+                  <%=image_tag(m.icon.url)%>
+                </td>
             <% if counter == 6%>
             <%counter = -1%>
             </tr>

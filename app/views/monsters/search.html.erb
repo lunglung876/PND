@@ -1,0 +1,60 @@
+<div id="search">
+    <table>
+      <tr>
+        <%= form_tag({:action =>"result"}, :remote => true, :'data-update-target' => 'result', id:"monster_search") do %>
+            <td>
+              <%=radio_button_tag(:attr,"fire") %>
+              <%= label_tag(:Fire, "Fire") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:attr,"water") %>
+              <%= label_tag(:Water, "Water") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:attr,"wood") %>
+              <%= label_tag(:Wood, "Wood") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:attr,"dark") %>
+              <%= label_tag(:Dark, "Dark") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:attr,"light") %>
+              <%= label_tag(:Light, "Light") %>
+            </td>
+      </tr>
+      <tr>
+            <td>
+              <%=radio_button_tag(:category,"dragon") %>
+              <%= label_tag(:Dragon, "Dragon") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:category,"devil") %>
+              <%= label_tag(:Devil, "Devil") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:category,"balanced") %>
+              <%= label_tag(:Balanced, "Balanced") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:category,"attacker") %>
+              <%= label_tag(:Attacker, "Attacker") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:category,"physical") %>
+              <%= label_tag(:Physical, "Physical") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:category,"healer") %>
+              <%= label_tag(:Healer, "Healer") %>
+            </td>
+            <td>
+              <%=radio_button_tag(:category,"god") %>
+              <%= label_tag(:God, "God") %>
+            </td>
+        <%end%>
+      </tr>
+    </table>
+</div>
+<div id="result">
+</div>

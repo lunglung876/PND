@@ -1,0 +1,22 @@
+ <table>
+    <% counter = 0%>
+    <% @monsters.each do |m| %>
+       <%puts m.attr%>
+        <% if counter == 0 %>
+            <tr>
+        <%end%>
+        <td>
+          <%=link_to(m) do%>
+              <div class="caption">
+                No. <%=m.id%><br/><br/><br/><br/><%=m.name%>
+              </div>
+          <%end%>
+          <%=image_tag(m.icon.url)%>
+        </td>
+        <% if counter == 6%>
+            <%counter = -1%>
+            </tr>
+        <%end%>
+        <% counter+= 1%>
+    <%end%>
+  </table>
