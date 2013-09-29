@@ -6,7 +6,7 @@ function mousein()
 
     caption.width(image.width());
     caption.height(image.height());
-    caption.fadeIn();
+    caption.fadeIn(320);
 }
 function mouseout()
 {
@@ -15,9 +15,8 @@ function mouseout()
 
     caption.width(image.width());
     caption.height(image.height());
-    caption.fadeOut();
+    caption.fadeOut(250);
 }
-
 
 $(function() {
     return $(document).on('mouseenter', 'tr td', mousein);
@@ -26,21 +25,29 @@ $(function() {
     return $(document).on('mouseleave', 'tr td', mouseout);
 });
 
-$(function(){
+$(document).on('click','td input',function(){
+        console.log($('input:radio[name=attr]:checked').val());
+        console.log($('input:radio[name=category]:checked').val());
+          //  $("#monster_search").submit();
+        var posting = $.post( "monsters/result",
+            {attr:$('input:radio[name=attr]:checked').val(),category:$('input:radio[name=category]:checked').val()}
+            );
+        posting.done(function(data){
+            console.log('done') ;
+            var content = $(data).find("content")
+            $("#result").html(data).hide();
+            $("#result").fadeIn();
+        })
 
-    $('td input').click(function(){
-        $("#monster_search").submit();
-    })
-})
+    });
 
+ /*
 $(function() {
-    /* Convenience for forms or links that return HTML from a remote ajax call.
-     The returned markup will be inserted into the element id specified.
-     */
-    $('form[data-update-target]').on('ajax:success', function(evt, data) {
-        console.log('ajax')
+    return $(document).on('ajax:success', 'form[data-update-target]', search);
+});
+function search(evt, data) {
+        console.log('sss')
         var target = $(this).data('update-target');
         console.log(target)
         $('#' + target).html(data);
-    });
-});
+    }      */

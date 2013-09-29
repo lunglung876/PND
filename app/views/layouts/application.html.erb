@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>PND</title>
+  <%= javascript_include_tag :defaults %>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
@@ -25,10 +26,10 @@
          </ul>
         </li>
         <li>
-          <%= link_to('Home',:root) %>
+          <%= link_to('Monsters',:controller => "monsters",:action =>"index") %>
           <ul>
             <li>
-              <%= link_to('Home',:root) %>
+              <%= link_to('Search',:controller => "monsters",:action =>"search") %>
             </li>
             <li>
               <%= link_to('Home',:root) %>

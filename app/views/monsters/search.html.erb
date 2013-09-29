@@ -1,56 +1,67 @@
 <div id="search">
     <table>
       <tr>
+        <td>
+          <span class="des">Attribute: </span>
+        </td>
+        <td>
         <%= form_tag({:action =>"result"}, :remote => true, :'data-update-target' => 'result', id:"monster_search") do %>
-            <td>
+
+            <span>
               <%=radio_button_tag(:attr,"fire") %>
-              <%= label_tag(:Fire, "Fire") %>
-            </td>
-            <td>
+              <%= label_tag(:attr_fire, "Fire") %>
+            </span>
+            <span>
               <%=radio_button_tag(:attr,"water") %>
-              <%= label_tag(:Water, "Water") %>
-            </td>
-            <td>
+              <%= label_tag(:attr_water, "Water") %>
+            </span>
+            <span>
               <%=radio_button_tag(:attr,"wood") %>
-              <%= label_tag(:Wood, "Wood") %>
-            </td>
-            <td>
+              <%= label_tag(:attr_wood, "Wood") %>
+            </span>
+            <span>
               <%=radio_button_tag(:attr,"dark") %>
-              <%= label_tag(:Dark, "Dark") %>
-            </td>
-            <td>
+              <%= label_tag(:attr_dark, "Dark") %>
+            </span>
+            <span>
               <%=radio_button_tag(:attr,"light") %>
-              <%= label_tag(:Light, "Light") %>
+              <%= label_tag(:attr_light, "Light") %>
+            </span>
             </td>
       </tr>
       <tr>
-            <td>
+        <td >
+            <span class="des">Type:</span>
+        </td>
+        <td>
+            <span>
               <%=radio_button_tag(:category,"dragon") %>
-              <%= label_tag(:Dragon, "Dragon") %>
-            </td>
-            <td>
+              <%= label_tag(:category_dragon, "Dragon") %>
+            </span>
+            <span>
               <%=radio_button_tag(:category,"devil") %>
-              <%= label_tag(:Devil, "Devil") %>
-            </td>
-            <td>
+              <%= label_tag(:category_devil, "Devil") %>
+            </span>
+            <span>
               <%=radio_button_tag(:category,"balanced") %>
-              <%= label_tag(:Balanced, "Balanced") %>
-            </td>
-            <td>
+              <%= label_tag(:category_balanced, "Balanced") %>
+            </span>
+            <span>
               <%=radio_button_tag(:category,"attacker") %>
-              <%= label_tag(:Attacker, "Attacker") %>
-            </td>
-            <td>
+              <%= label_tag(:category_attacker, "Attacker") %>
+            </span>
+            <span>
               <%=radio_button_tag(:category,"physical") %>
-              <%= label_tag(:Physical, "Physical") %>
-            </td>
-            <td>
+              <%= label_tag(:category_physical, "Physical") %>
+            </span>
+            <span>
               <%=radio_button_tag(:category,"healer") %>
-              <%= label_tag(:Healer, "Healer") %>
-            </td>
-            <td>
+              <%= label_tag(:category_healer, "Healer") %>
+            </span>
+            <span>
               <%=radio_button_tag(:category,"god") %>
-              <%= label_tag(:God, "God") %>
+              <%= label_tag(:category_god, "God") %>
+            </span>
             </td>
         <%end%>
       </tr>
