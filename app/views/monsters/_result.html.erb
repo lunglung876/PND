@@ -8,7 +8,8 @@
         <td>
           <%=link_to(m) do%>
               <div class="caption">
-                No. <%=m.id%><br/><br/><br/><br/><%=m.name%>
+                No. <%=m.id%><br/><br/><br/><% if m.name.length < 14%><%puts m.name.length%>
+                    <br/><%end%><%=m.name%>
               </div>
           <%end%>
           <%=image_tag(m.icon.url)%>
