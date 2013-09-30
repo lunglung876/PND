@@ -14,22 +14,22 @@
 ActiveRecord::Schema.define(version: 20130926041922) do
 
   create_table "monsters", force: true do |t|
-    t.string   "name"
-    t.string   "attr"
-    t.string   "category"
-    t.integer  "hp"
-    t.integer  "atk"
-    t.integer  "rcv"
-    t.integer  "rarity"
-    t.integer  "exp"
-    t.integer  "askill"
-    t.integer  "lskill"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "icon_file_name"
-    t.string   "icon_content_type"
-    t.integer  "icon_file_size"
-    t.datetime "icon_updated_at"
+    t.string    "name"
+    t.string    "attr"
+    t.string    "category"
+    t.integer   "hp"
+    t.integer   "atk"
+    t.integer   "rcv"
+    t.integer   "rarity"
+    t.integer   "exp"
+    t.integer   "askill"
+    t.integer   "lskill"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.string    "icon_file_name"
+    t.string    "icon_content_type"
+    t.integer   "icon_file_size"
+    t.timestamp "icon_updated_at"
   end
 
 end

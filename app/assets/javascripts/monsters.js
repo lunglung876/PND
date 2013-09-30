@@ -26,9 +26,11 @@ $(function() {
 });
 
 $(document).on('click','td input',function(){
-        console.log($('input:radio[name=attr]:checked').val());
-        console.log($('input:radio[name=category]:checked').val());
-          //  $("#monster_search").submit();
+        if (this.getAttribute('checked')) {  // check the presence of checked attr
+            $(this).removeAttr('checked'); // if present remove that
+        } else {
+            $(this).attr('checked', true); // if not then make checked
+        }
         var posting = $.post( "monsters/result",
             {attr:$('input:radio[name=attr]:checked').val(),category:$('input:radio[name=category]:checked').val()}
             );
