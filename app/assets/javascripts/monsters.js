@@ -40,14 +40,3 @@ $(document).on('click','td input',function(){
         })
 
     });
-
- /*
-$(function() {
-    return $(document).on('ajax:success', 'form[data-update-target]', search);
-});
-function search(evt, data) {
-        console.log('sss')
-        var target = $(this).data('update-target');
-        console.log(target)
-        $('#' + target).html(data);
-    }      */

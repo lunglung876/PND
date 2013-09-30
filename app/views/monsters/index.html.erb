@@ -10,7 +10,10 @@
                   <%=link_to(m) do%>
                       <div class="caption">
                         No. <%=m.id%><br/><br/><br/><% if m.name.length < 14%>
-                            <br/><%end%><%=m.name%>
+                            <br/>
+                            <%elsif m.name.split[0].length < 5%>
+                            <br/>
+                            <%end%><%=m.name%>
                       </div>
                   <%end%>
                   <%=image_tag(m.icon.url)%>
