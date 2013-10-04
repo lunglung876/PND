@@ -1,0 +1,142 @@
+<h1>New team</h1>
+
+<div id = "current_team">
+
+</div>
+
+<div id = "team_select">
+  <table>
+    <tbody>
+    <%= form_for(@team) do |t|%>
+    <tr>
+     <th rowspan = "2">
+        Leader
+     </th>
+      <td>
+        <%= collection_select(:team, :m1_id, Monster.all, :id, :name_with_id) %>
+             Level:
+        <%= t.select :m1_lvl, (1..99) %>
+     </td>
+       <tr>
+          <td> + Value
+            HP:
+            <%= select_tag( :m1_hp, options_for_select((1..99).step(1)) )%>
+            ATK:
+            <%= select_tag( :m1_atk, options_for_select((1..99).step(1)) )%>
+            RCV:
+            <%= select_tag( :m1_rcv, options_for_select((1..99).step(1)) ) %>
+          </td>
+        </tr>
+        </tr>
+        <tr class="break"><td colspan="2"></td></tr>
+        <tr>
+          <th rowspan = "2">
+            Member 1
+          </th>
+          <td>
+            <%= collection_select(:team, :m2_id, Monster.all, :id, :name_with_id) %>
+            Level:
+            <%= t.select :m2_lvl, (1..99) %>
+          </td>
+        <tr>
+          <td> + Value
+            HP:
+            <%= select_tag( :m2_hp, options_for_select((1..99).step(1)) )%>
+            ATK:
+            <%= select_tag( :m2_atk, options_for_select((1..99).step(1)) )%>
+            RCV:
+            <%= select_tag( :m2_rcv, options_for_select((1..99).step(1)) ) %>
+          </td>
+        </tr>
+    </tr>
+        <tr class="break"><td colspan="2"></td></tr>
+        <tr>
+          <th rowspan = "2">
+            Member 2
+          </th>
+          <td>
+            <%= collection_select(:team, :m3_id, Monster.all, :id, :name_with_id) %>
+            Level:
+            <%= t.select :m3_lvl, (1..99) %>
+          </td>
+        <tr>
+          <td> + Value
+            HP:
+            <%= select_tag( :m3_hp, options_for_select((1..99).step(1)) )%>
+            ATK:
+            <%= select_tag( :m3_atk, options_for_select((1..99).step(1)) )%>
+            RCV:
+            <%= select_tag( :m3_rcv, options_for_select((1..99).step(1)) ) %>
+          </td>
+        </tr>
+     </tr>
+        <tr class="break"><td colspan="2"></td></tr>
+        <tr>
+          <th rowspan = "2">
+            Member 3
+          </th>
+          <td>
+            <%= collection_select(:team, :m4_id, Monster.all, :id, :name_with_id) %>
+            Level:
+            <%= t.select :m4_lvl, (1..99) %>
+          </td>
+        <tr>
+          <td> + Value
+            HP:
+            <%= select_tag( :m4_hp, options_for_select((1..99).step(1)) )%>
+            ATK:
+            <%= select_tag( :m4_atk, options_for_select((1..99).step(1)) )%>
+            RCV:
+            <%= select_tag( :m4_rcv, options_for_select((1..99).step(1)) ) %>
+          </td>
+        </tr>
+        </tr>
+        <tr class="break"><td colspan="2"></td></tr>
+        <tr>
+          <th rowspan = "2">
+            Member 4
+          </th>
+          <td>
+            <%= collection_select(:team, :m5_id, Monster.all, :id, :name_with_id) %>
+            Level:
+            <%= t.select :m5_lvl, (1..99) %>
+          </td>
+        <tr>
+          <td> + Value
+            HP:
+            <%= select_tag( :m5_hp, options_for_select((1..99).step(1)) )%>
+            ATK:
+            <%= select_tag( :m5_atk, options_for_select((1..99).step(1)) )%>
+            RCV:
+            <%= select_tag( :m5_rcv, options_for_select((1..99).step(1)) ) %>
+          </td>
+        </tr>
+        </tr>
+        <tr class="break"><td colspan="2"></td></tr>
+        <tr>
+          <th rowspan = "2">
+            Friend
+          </th>
+          <td>
+            <%= collection_select(:team, :m6_id, Monster.all, :id, :name_with_id) %>
+            Level:
+            <%= t.select :m6_lvl, (1..99) %>
+          </td>
+        <tr>
+          <td> + Value
+            HP:
+            <%= select_tag( :m6_hp, options_for_select((1..99).step(1)) )%>
+            ATK:
+            <%= select_tag( :m6_atk, options_for_select((1..99).step(1)) )%>
+            RCV:
+            <%= select_tag( :m6_rcv, options_for_select((1..99).step(1)) ) %>
+          </td>
+        </tr>
+        </tr>
+
+    <%end%>
+     </tbody>
+  </table>
+</div>
+
+<%= link_to 'Back', teams_path %>

@@ -1,0 +1,39 @@
+// Place all the styles related to the teams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#team_select tr
+{
+  background-color:#D8D8D8;
+}
+#team_select td
+{
+  background-color:#D8D8D8;
+  width:400px ;
+  text-align: center;
+}
+#team_select th
+{
+  background-color:#D8D8D8;
+  width:90px;
+}
+
+#team_select table
+{
+  cellpading:10;
+  cellspacing:1;
+}
+
+div#team_select
+{
+  width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+}
+
+#team_select tr.break,#team_select tr.break td{
+  background-color:#39393a;
+  border:none;
+  height:10px;
+  padding:0;
+}
