@@ -1,0 +1,22 @@
+
+---
+monsters:
+  columns:
+  - id
+  - name
+  - attr
+  - category
+  - hp
+  - atk
+  - rcv
+  - rarity
+  - exp
+  - askill
+  - lskill
+  - created_at
+  - updated_at
+  - icon_file_name
+  - icon_content_type
+  - icon_file_size
+  - icon_updated_at
+  records: 
