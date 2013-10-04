@@ -1,4 +1,6 @@
 PND::Application.routes.draw do
+  resources :teams
+
   resources :monsters
   root to: 'monsters#index'
   #match '/', to: 'monsters#home', via: 'get'
