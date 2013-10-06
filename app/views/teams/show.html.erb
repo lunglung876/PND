@@ -1,4 +1,134 @@
-<p id="notice"><%= notice %></p>
+<% monsters =[Monster.find(@team.m1_id),
+ Monster.find(@team.m2_id),
+Monster.find(@team.m3_id) ,
+ Monster.find(@team.m4_id),
+ Monster.find(@team.m5_id),
+ Monster.find(@team.m6_id)]%>
+<div id="team_sim">
+<table>
+      <tr>
+      <%total = {'fire' =>0,'water'=>0,'wood'=>0,'light' =>0,'dark'=>0,'rcv'=>0}
+         puts total['fire'] %>
+      <%counter = 0%>
+      <% monsters.each do |m| %>
+      <% if counter == 0
+           plus_value = @team.m1_plus.split(',')[1].to_i*5
+         elsif counter == 1
+             plus_value = @team.m2_plus.split(',')[1].to_i*5
+         elsif counter == 2
+             plus_value = @team.m3_plus.split(',')[1].to_i*5
+         elsif counter == 3
+             plus_value = @team.m4_plus.split(',')[1].to_i*5
+         elsif counter == 4
+             plus_value = @team.m5_plus.split(',')[1].to_i*5
+         elsif counter == 5
+             plus_value = @team.m6_plus.split(',')[1].to_i*5
+         end
+         counter = counter+1
+      puts plus_value%>
+      <% if m.attr == 'fire'
+           total['fire'] += m.atk + plus_value
+         elsif m.attr == 'water'
+            total['water'] += m.atk   + plus_value
+         elsif m.attr == 'wood'
+           total['wood'] += m.atk   + plus_value
+         elsif m.attr == 'light'
+           total['light'] += m.atk   + plus_value
+         elsif m.attr == 'dark'
+           total['dark'] += m.atk   + plus_value
+         end
+         total['rcv'] += m.rcv %>
+      <td>
+        <%=link_to(m) do%>
+            <div class="caption">
+              No. <%=m.id%><br/><br/><br/><% if m.name.length < 14%>
+                  <br/>
+              <%elsif m.name.split[0].length < 5%>
+                  <br/>
+                  <%end%><%=m.name%>
+            </div>
+        <%end%>
+        <%=image_tag(m.icon.url)%>
+      </td>
+      <%end%>
+      </tr>
+</table>
+<table>
+  <tr>
+    <td>
+      Total HP
+    </td>
+    <td>
+      <%= @hp_plus*10+ monsters.inject(0) do |sum, mon|
+        sum + mon.hp
+      end %>
+    </td>
+    <td>
+      Cost
+    </td>
+    <td>
+      10
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%=image_tag('fire.png', {height:31, width: 31})%>
+    </td>
+    <td>
+       <%=total['fire']%>
+    </td>
+    <td>
+      <%=image_tag('water.png', {height:31, width: 31})%>
+    </td>
+    <td>
+      <%=total['water']%>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%=image_tag('wood.png', {height:31, width: 31})%>
+    </td>
+    <td>
+      <%=total['wood']%>
+    </td>
+    <td>
+      <%=image_tag('light.png', {height:31, width: 31})%>
+    </td>
+    <td>
+      <%=total['light']%>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <%=image_tag('dark.png', {height:31, width: 31})%>
+    </td>
+    <td>
+      <%=total['dark']%>
+    </td>
+    <td>
+      <%=image_tag('heart.png', {height:31, width: 31})%>
+    </td>
+    <td>
+      <%total['rcv'] += @rcv_plus*3%>
+      <%=total['rcv']%>
+    </td>
+  </tr>
+</table>
+  <table>
+    <tr>
+      <td>
+        Leader Skill
+      </td>
+      <td>
 
-<%= link_to 'Edit', edit_team_path(@team) %> |
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Friend's Skill
+      </td>
+    </tr>
+  </table>
+</div>
+
 <%= link_to 'Back', teams_path %>
